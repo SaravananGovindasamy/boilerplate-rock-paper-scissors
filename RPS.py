@@ -1,16 +1,6 @@
 # The example function below keeps track of the opponent's history and plays whatever the opponent played two plays ago. It is not a very good player so you will need to change the code to pass the challenge.
 import random
-def player(prev_play, opponent_history=[], counter=[0], current_opponent=[], kris_firstmove=[0], play_order=[{
-    "RR": 0,
-    "RP": 0,
-    "RS": 0,
-    "PR": 0,
-    "PP": 0,
-    "PS": 0,
-    "SR": 0,
-    "SP": 0,
-    "SS": 0,
-}]):
+def player(prev_play, opponent_history=[], counter=[0], current_opponent=[], kris_firstmove=[0]):
     opponent_history.append(prev_play)
     guess = "S"
     if opponent_history[-1] == '':
